@@ -25,7 +25,7 @@ with open("public_key.txt", "r") as pr:
 
 audio_test = Audio(filename=args.i)
 audio = Audio(filename=args.i)
-encrypter = Steganographer(audio=audio, algorithm=BBS())
-encrypter.encrypt("World goo!"*1000, filename=args.o, publicKey=public)
+encrypter = Steganographer(audio=audio, algorithm=BBS(), coding=args.enc)
+encrypter.encrypt(msg, filename=args.o, publicKey=public)
 audio2 = Audio(filename=args.o)
 print("Successfully encrypted")
