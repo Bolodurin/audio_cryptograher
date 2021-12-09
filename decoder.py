@@ -15,6 +15,6 @@ with open("private_key.txt", "r") as pr:
 
 args = parser.parse_args()
 audio = Audio(filename=args.i)
-decoder = Steganographer(audio=audio, coding=args.enc)
+decoder = Steganographer(audio=audio)
 res = decoder.decode(private)
 print(res.replace("*", "\n"))
