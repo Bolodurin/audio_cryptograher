@@ -15,5 +15,5 @@ Interface file decoder.py use tten methods to decode message from created audio 
 ./encoder.py
 ./decoder.py
 ```
-# Note
+# Note, that Кирилл Янситов пидор
 Parser is available by adding -h to end of running command: ./encoder.py -h and ./decoder.py -h. In the following message available operations are showed.
